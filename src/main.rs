@@ -36,7 +36,7 @@ fn main() {
             println!("Answer is {} Fahrenheit", output);
         },
         _ => {
-            println!("Else");
+            println!("Please enter correct input.");
             return
         }
     }
