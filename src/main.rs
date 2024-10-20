@@ -27,13 +27,19 @@ fn main() {
 
     let input = input.trim();
     match input {
-        "F" => println!("l"),
-        "C" => println!("2"),
+        "F" => {
+            let output = f_to_c(temperature);
+            println!("Answer is {} Celsius", output);
+        },
+        "C" => {
+            let output: f64 = c_to_f(temperature);
+            println!("Answer is {} Fahrenheit", output);
+        },
         _ => {
             println!("Else");
             return
         }
     }
 
-    println!("EX")
+    println!("\nDone, Thank you for using our software.")
 }
